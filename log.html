@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>컴퓨터공학 종합설계 5조</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div class="header">
+		<div class="container">
+	    	<div class="row">
+	            <div class="col-md-5">
+	              	<!-- Logo -->
+				  	<div class="logo">
+	                 <h1><a href="index.html">E.D.P.S</a></h1>
+	            	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+    <div class="page-content">
+    	<div class="row">
+		  <div class="col-md-2">
+		  	<div class="sidebar content-box" style="display: block;">
+                <ul class="nav">
+                    <!-- Main menu -->
+                    <li class="current"><a href="index.html"><i class="glyphicon glyphicon-home"></i> home</a></li>
+                    <li class="submenu">
+                         <a href="#">
+                            <i class="glyphicon glyphicon-stats"></i> dashboard
+                            <span class="caret pull-right"></span>
+                         </a>
+                         <!-- Sub menu -->
+                         <ul>
+                            <li><a href="chart.html">chart</a></li>
+                            <li><a href="log.html">log</a></li>
+                        </ul>
+                    </li>
+					<li><a href="alarmMain.html"><i class="glyphicon glyphicon-bullhorn"></i> alarm</a></li>
+                    <li><a href=""><i class="glyphicon glyphicon-wrench"></i> setting</a></li>
+                </ul>
+            </div>
+		</div>
+		  <div class="col-md-10"><div class="content-box-large">
+  				<div class="panel-heading">
+					<div class="panel-title">Data Logs</div>
+				</div>
+  				<div class="panel-body">
+  					<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="example">
+						<thead>
+							<tr>
+								<th>SensorNum</th>
+								<th>Data</th>
+								<th>Value</th>
+								<th>Time</th>
+								<th>ETC</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="odd gradeX">
+								<td>1</td>
+								<td>temperature</td>
+								<td>18</td>
+								<td class="center"> 2017-1-18 18:30:19 </td>
+								<td class="center">A</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>19</td>
+								<td class="center"> 2017-1-18 18:30:18 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>18</td>
+								<td class="center"> 2017-1-18 18:30:17 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>20</td>
+								<td class="center"> 2017-1-18 18:30:16 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>21</td>
+								<td class="center"> 2017-1-18 18:30:15 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>23</td>
+								<td class="center"> 2017-1-18 18:30:14 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>25</td>
+								<td class="center"> 2017-1-18 18:30:13 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>19</td>
+								<td class="center"> 2017-1-18 18:30:12 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>19</td>
+								<td class="center"> 2017-1-18 18:30:11 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>1</td>
+								<td>temperature</td>
+								<td>19</td>
+								<td class="center"> 2017-1-18 18:30:10 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:39 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:38 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:37 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:36 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:29:50 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:29:59 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:00 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:01 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:03 </td>
+								<td class="center">B</td>
+							</tr>
+							<tr class="even gradeC">
+								<td>2</td>
+								<td>distance</td>
+								<td>100</td>
+								<td class="center"> 2017-1-18 18:30:05 </td>
+								<td class="center">B</td>
+							</tr>
+							
+						</tbody>
+					</table>
+  				</div>
+  			</div>
+  		</div>
+		</div>
+    </div>
+		  <!--table part-->
+		    
+
+      <link href="vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen">
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="vendors/datatables/js/jquery.dataTables.min.js"></script>
+
+    <script src="vendors/datatables/dataTables.bootstrap.js"></script>
+
+    <script src="js/custom.js"></script>
+    <script src="js/tables.js"></script>
+  </body>
+
+</html>
+<!-- HTML -->
