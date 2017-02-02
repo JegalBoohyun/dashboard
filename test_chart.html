@@ -1,0 +1,53 @@
+
+
+<html>
+<head>
+<style>
+#chartdiv {
+	background-color: #2c3742;
+	width	: 90%;
+	height	: 500px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	}									
+</style>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>amCharts tutorial: Loading external data</title>
+  <script src="http://www.amcharts.com/lib/3/amcharts.js"></script>
+  <script src="http://www.amcharts.com/lib/3/serial.js"></script>
+  <script src="http://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js"></script>
+<script>
+	var chart = AmCharts.makeChart( "chartdiv", {
+  "type": "serial",
+  "dataLoader": {
+    "url": "test.php"
+  },
+  "pathToImages": "http://www.amcharts.com/lib/images/",
+  "dataDateFormat": 'YYYY-MM-DD HH:NN:SS',
+  "categoryField": 'time',
+  "categoryAxis": {
+      "parseDates": true,
+      "autoGridCount" : true,
+  },
+  "graphs": [ {
+    "valueField": "dist",
+    "bullet": "round",
+    "bulletBorderColor": "#FFFFFF",
+    "bulletBorderThickness": 2,
+    "lineThickness ": 2,
+    "lineAlpha": 0.5
+  }]
+} );
+</script>
+
+</head>
+<body>
+<div id="chartdiv">
+</body>
+</html>
